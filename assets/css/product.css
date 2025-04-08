@@ -1,0 +1,208 @@
+.products{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.products .product{
+  max-width: 300px;
+  /*width: calc(16.66% - 10px);*/
+  width: calc(20% - 10px);
+  padding: 8px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 0 3px #d7d7d7;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.products .product .image{
+  overflow: hidden;
+  position: relative;
+}
+.products .product .image img{
+  width: 100%;
+  border-radius: 5px;
+
+}
+.products .product .image .second{
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.products .product:hover .image .second{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.5);
+}
+.products .product .labels{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.products .product .labels > div{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+.products .product .content{
+  text-align: center;
+  margin-top: 10px;
+}
+.products .product .content .title{
+  font-size: 15px;
+  height: 40px;
+  overflow: hidden;
+}
+.products .product .content del{
+  color: rgb(175, 175, 175);
+}
+.products .product .content .price{
+  margin-bottom: 10px;
+}
+.products .product .content .submit_button{
+  margin-bottom: 10px;
+  height: 38px;
+  overflow: hidden;
+  width: 49% !important;
+  padding: 0px !important;
+  padding-top: 9px !important;
+}
+.products .product .content .submit_button > .cart_btn{
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.products .product .content .submit_button:hover > .cart_btn{
+  margin-top: -34px;   
+}
+
+
+.product-box .product-item .product_content {
+  padding: 5px 5px;
+  background-color: #fff;
+}
+.product-box .product-item .product_content h4 {
+  line-height: 20px;
+  display: block;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 0;
+  
+}
+.product-box .product-item .product_content h4 a{
+  text-decoration: none;
+  color: var(--black);
+}
+.product-box .product-item .product_content h4 a:hover {
+  color: #fdb813;
+}
+.product-box .product-item .product_content .price_box {
+  display: flex;
+  padding-bottom: 15px;
+}
+.product-box .product-item .product_content .price_box span.current_price {
+  color: #f30;
+  font-weight: 600;
+  font-size: 17px;
+}
+.product-box .product-item .product_content .price_box span.old_price {
+  text-decoration: line-through;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.burmanRadio {
+  margin-bottom: 10px;
+}
+.burmanRadio__input {
+  display: none;
+}
+.burmanRadio__input:checked ~ .burmanRadio__label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.burmanRadio__label {
+  cursor: pointer;
+  line-height: 30px;
+  position: relative;
+  margin-left: 35px;
+}
+.burmanRadio__label::before, .burmanRadio__label::after {
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+.burmanRadio__label::before {
+  content: "";
+  border: 1.5px solid #ffc107;
+  width: 20px;
+  height: 20px;
+}
+.burmanRadio__label::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";
+  background: #ffc107;
+  border: 1.5px solid #ffc107;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  transform: scale(0);
+}
+.burmanRadio__label:hover::before {
+  border-color: #7BC4CA;
+}
+.quantity_box{
+    display: inline-flex;
+    vertical-align: top;
+    white-space: nowrap;
+    font-size: 0;
+}
+div.quantity_box button[type="button"] {
+    padding: 0 5px;
+    min-width: 25px;
+    min-height: unset;
+    height: 42px;
+    border: 2px solid rgb(211, 211, 211);
+    background: white;
+    box-shadow: none;
+    color: black;
+    border-radius: 0;
+}
+div.quantity_box button[type="button"]:hover {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+div.quantity_box input[type="text"] {
+    width: 40px;
+    color: black;
+    border-radius: 0;
+    border: 2px solid rgb(211, 211, 211);
+    border-right: none;
+    border-left: none;
+}
+div.quantity_box button[type="button"].minus {
+    border-radius: 10px 0 0 10px;
+}
+div.quantity_box button[type="button"].plus {
+    border-radius: 0 10px 10px 0;
+}

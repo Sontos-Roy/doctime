@@ -1,0 +1,84 @@
+.main-wrapper{
+    background: #fff;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #292827;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators .active{
+    background-color: #0064E4;
+}
+
+.carousel-indicators{
+    top: calc(100% - 15px);
+    margin: auto;
+}
+.feature_item .card-body{
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+.feature_item .card-body .content{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 10%, white 90%);
+}
+.feature_item .card-body .content .hover_show{
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    display: block;
+}
+.feature_item:hover .card-body .content .hover_show{
+    visibility: visible;
+    opacity: 1;
+    height: 25px;
+    display: block;
+}
+.feature_item:hover .card-body .content{
+    visibility: visible;
+    opacity: 1;
+}
+@media(max-width: 769px){
+    .feature_item .card-body{
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+}
+.counter_section{
+    background-color: #eef7ff;
+} 
+.buy_medicine{
+    padding: 15vh 0;
+    position: relative;
+}
+.buy_medicine .bg-content{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../image/svg/home_medicine.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.slick-dots li button:before {
+    color: #cacaca;  /* Gray color for inactive dots */
+    opacity: 1;      /* Full visibility */
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+}
+/* Change active dot color */
+.slick-dots li.slick-active button:before {
+    color: #fff;  /* Red color for active dot */
+}
+
+/* Optional: Remove default dot styling if needed */
+.slick-dots li button:before {
+    font-size: 45px;
+}
