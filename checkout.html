@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/silck/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/singleproduct.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
@@ -96,162 +96,131 @@
                     <li class="breadcrumb-item active" aria-current="page"><a href="index.html"
                             class="text-muted">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="index.html"
-                            class="text-muted">Shop</a></li>
-                    <li class="breadcrumb-item disabled">Product</li>
+                            class="text-muted">Carts</a></li>
+                    <li class="breadcrumb-item disabled">Checkouts</li>
                 </ol>
             </nav>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12 mb-3">
-                    <div class="product">
-                        <div class="image card">
-                            <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-6 order-md-last order-last">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Cart - 1 items</h5>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="card shadow">
                         <div class="card-body">
-                            <h3 class="bold">SYSTEAR 10ML Eye Drop</h3>
-                            <div class="stars">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-muted"></i>
-                                <span>(4.5 Stars)</span>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ছবি</th>
+                                            <th scope="col">পন্যের নাম</th>
+                                            <th scope="col">সাইজ/কালার</th>
+                                            <th scope="col">পরিমান</th>
+                                            <th scope="col">পন্যের দাম</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <div class="d-flex">
+                                                    <form method="POST" action="https://fancybazarbd.com/carts/40">
+                                                        <input type="hidden" name="_token" value="sEZSCHKTe8Ux9NzrKZsEYrVrQ3sZ54Bdzvosvn7x" autocomplete="off"> <input type="hidden" name="_method" value="DELETE">
+                                                        <div class="remove">
+                                                            <button class="btn remove-item" type="submit">
+                                                                <i class="fas fa-times"></i>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                    <img src="https://fancybazarbd.com/posadmin/images/product/large/undefined" alt="" class="rounded border" style="height: 60px;width: 60px;" width="">
+                                                </div>
+                                            </th>
+                                            <td>combo 2</td>
+                                            <td>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex mb-4 align-items-start" style="max-width: 300px" data-href="https://fancybazarbd.com/carts/40/edit">
+                                                    <button class="btn btn-primary me-2 qtybtn minus">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <div class="form-outline">
+                                                        <input id="form1" min="1" name="quantity" value="1" style="width: 40px;" type="text" readonly="" class="form-control quantity">
+                                                    </div>
+                                                    <button class="btn btn-primary ms-2 qtybtn plus">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <strong> 700 </strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="text-end">সাবটোটাল</td>
+                                            <td>700 ৳</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="text-end">ডেলিভারি চার্জ</td>
+                                            <td>
+                                                <p id="shipping_cost">60</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="text-end">টোটাল</td>
+                                            <td>
+                                                <p id="total_amount">760</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam atque exercitationem
-                                modi iste aspernatur molestias laboriosam sit optio expedita iure, nisi possimus eos?
-                                Perferendis, a amet hic cum voluptatem voluptates.</p>
-                            <p><b>Generic Name :</b> LUBRICATING</p>
-                            <p><b>Supplier Name :</b> ARISTOPHARMA LTD</p>
-                            <h2 class="bold">৳ 250</h2>
-                            <button class="btn btn-outline-success border border-2 border-success my-3 p-3 bold w-100">
-                                <i class="fas fa-shopping-cart"></i> Add to Cart
-                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-12">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                                type="button" role="tab" aria-controls="home" aria-selected="true">
-                                Description
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                type="button" role="tab" aria-controls="profile" aria-selected="false">
-                                Review
-                            </button>
-                        </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            Description
+                <div class="col-md-6 col-lg-6">
+                    <h4 class="mb-3">Billing address</h4>
+                    <form class="needs-validation" action="https://fancybazarbd.com/checkouts" method="post">
+                        <input type="hidden" name="_token" value="sEZSCHKTe8Ux9NzrKZsEYrVrQ3sZ54Bdzvosvn7x" autocomplete="off">
+                        <div class="row g-3">
+                            <div class="col-sm-12">
+                                <label for="firstName" class="form-label">Your Full Name</label>
+                                <input type="text" class="form-control p-2" placeholder="Enter Name " value="" name="name">
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="firstName" class="form-label">Your Mobile Number</label>
+                                <input type="text" class="form-control" placeholder="Enter Mobile .." value="" name="mobile">
+                            </div>
+                            <div class="col-12">
+                                <label for="address" class="form-label">Your Fulll Address</label>
+                                <input type="text" class="form-control p-4" placeholder="Enter Address .." name="address" value="">
+                            </div>
+                            <div class="col-12">
+                                <label for="shipping_charge" class="form-label">Shipping Charge</label>
+                                <select class="form-select shadow-none" id="shipping_charge" name="shipping_charge">
+                                    <option value="60">Inside Dhaka (60)</option>
+                                    <option value="120">Outside Dhaka (120)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="state" class="form-label">Payment Method</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paying_method" id="cash_on_delivery" value="cash_on_delivery" checked="">
+                                    <label class="form-check-label" for="cash_on_delivery">
+                                        Cash On Delivery
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paying_method" id="bkash" value="bkash">
+                                    <label class="form-check-label" for="bkash">
+                                        Bkash
+                                    </label>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <button class="w-100 btn btn-primary mb-4 btn-lg" type="submit">Continue to checkout</button>
                         </div>
-                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            Review
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <section class="product_section">
-            <div class="container-xl">
-                <div class="section_title">Related Products</div>
-                <div class="products product_slider">
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="image">
-                            <a href="">
-                                <img src="assets/image/products/PRODEP .webp" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <a class="semi mb-0 product_name">CITIZEN DIGITALl THERMOMETER Model: CTA-302 DEVICE</a>
-                            <i class="text-cap font-12">Surgical</i>
-                            <p class="text-success mb-0 font-18 semi">৳ 5098</p>
-                            <button class="btn btn-outline-success border-3 w-100 border border-success bold"><i
-                                    class="fas fa-shopping-cart"></i> Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <footer class="footer pt-5 text-light">
